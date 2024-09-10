@@ -155,18 +155,7 @@ h1 {
 	      <table width="100%">
 	      <tr>
             <TD align="center">                        
-			 <script>
-			 function onClick(e) {
-			 e.preventDefault();
-			 grecaptcha.enterprise.ready(async () => {
-			 const token = await grecaptcha.enterprise.execute('6LducREnAAAAAOkLBq_rXMKwhys4pIMofomAWmI1', {action: 'LOGIN'});
-			 // IMPORTANT: The 'token' that results from execute is an encrypted response sent by
-			 // reCAPTCHA Enterprise to the end user's browser.
-			 // This token must be validated by creating an assessment.
-			 // See https://cloud.google.com/recaptcha-enterprise/docs/create-assessment
-			 });
-			 }
-			</script>
+
             <br/>            
 			  <INPUT class="btn" tabindex="30" TYPE="SUBMIT" NAME="btn_ok" VALUE="Sprawdź wynik badania">			  
 			</TD>

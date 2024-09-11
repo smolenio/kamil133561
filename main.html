@@ -2,14 +2,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html lang="pl">
   <HEAD>    
-	  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-M3JXR6XH');</script>
-<!-- End Google Tag Manager -->
-	  
 	<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Szpital Powiatowy w Zawierciu, Zawiercie, Powiat zawierciański, lekarze, wyniki szpital zawiercie,www.pcspil.pl,pcsoft,lab2k,laboratorium,analityczne">    
@@ -17,36 +9,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta name="Author" content="PC Soft s.c. Pila (www.pcspil.pl)">
     <meta http-equiv="reply-to" content="pcspil@pi.onet.pl">
     <meta name="Version" content="1-0-0">
-    <meta name="robots" content="index, follow">
-
-    <meta property="og:title" content="Laboratorium Szpitala Powiatowego w Zawierciu" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://smolenio.github.io/kamil133561/main.html" />
-    <meta property="og:image" content="logo.png" />
-	  
     <title>Laboratorium Szpitala Powiatowego w Zawierciu</title>
 	<link rel="shortcut icon" href="logo.ico">
     <script src="https://www.google.com/recaptcha/enterprise.js?render=6LducREnAAAAAOkLBq_rXMKwhys4pIMofomAWmI1"></script>
-
-	  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "Laboratorium Szpitala Powiatowego w Zawierciu",
-  "url": "https://smolenio.github.io/kamil133561/main.html",
-  "image": "https://smolenio.github.io/kamil133561/logo.png",
-  "description": "Strona pozwala na sprawdzenie wynikow online",
-  "publisher": {
-    "@type": "Organization",
-    "name": "Szpital Powiatowy w Zawierciu",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://smolenio.github.io/kamil133561/logo.jpg"
-    }
-  }
-}
-</script>
-	  
+	  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M3JXR6XH');</script>
+<!-- End Google Tag Manager -->
 	 <style>
 #szpital1 {
     color: #333333;
@@ -190,7 +162,18 @@ h1 {
 	      <table width="100%">
 	      <tr>
             <TD align="center">                        
-
+			 <script>
+			 function onClick(e) {
+			 e.preventDefault();
+			 grecaptcha.enterprise.ready(async () => {
+			 const token = await grecaptcha.enterprise.execute('6LducREnAAAAAOkLBq_rXMKwhys4pIMofomAWmI1', {action: 'LOGIN'});
+			 // IMPORTANT: The 'token' that results from execute is an encrypted response sent by
+			 // reCAPTCHA Enterprise to the end user's browser.
+			 // This token must be validated by creating an assessment.
+			 // See https://cloud.google.com/recaptcha-enterprise/docs/create-assessment
+			 });
+			 }
+			</script>
             <br/>            
 			  <INPUT class="btn" tabindex="30" TYPE="SUBMIT" NAME="btn_ok" VALUE="Sprawdź wynik badania">			  
 			</TD>
@@ -210,10 +193,9 @@ h1 {
 		</div>
     </FORM>
 	</section>
-	  <!-- Google Tag Manager (noscript) -->
+	 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M3JXR6XH"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
   </BODY>
 </html>
-
